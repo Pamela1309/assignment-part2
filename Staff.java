@@ -1,29 +1,50 @@
-public class Staff {
-    public int StaffID;
-    public Name name;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Staff(int staffID, Name name){
-        this.StaffID = StaffID;
-        this.name = name;
+class Staff {
+    private int staffId;
+    private Name name;
+    private String permissionLevel;
+
+    private static List<Competition> allCompetitions = new ArrayList<>();
+
+    public Staff(int staffId, String firstName, String middleName, String lastName) {
+        this.staffId = staffId;
+        this.name = new Name(firstName, middleName, lastName);
+        this.permissionLevel = "Staff";
     }
 
-    public void setStaffID(int Value){
-        this.StaffID = Value;
+    public Staff(int staffId2, Name name2, String string, String permissionLevel) {
+        this.permissionLevel = permissionLevel;
     }
 
-    public int getStaffID(){
-        return StaffID;
+    public void viewAllCompetitors(List<Competitor> allCompetitors) {
+        System.out.println("All Competitors:");
+        for (Competitor competitor : allCompetitors) {
+            System.out.println(competitor.getCompetitorNumber() + " - " + competitor.getName());
+        }
     }
 
-    public void setName (Name name){
-        this.name = name;
+    public static void setAllCompetitions(List<Competition> competitions) {
+        allCompetitions = competitions;
     }
 
-    public String getName(){
-        return this.name.toString();
+    public static List<Competition> getAllCompetitions() {
+        return allCompetitions;
     }
 
-    public String toString(){
-        return StaffID + name.toString();
+    public int getStaffId() {
+        return staffId;
+    }
+
+    public Name getName() {
+        return name;
+    }
+
+    public String getPermissionLevel() {
+        return permissionLevel;
+    }
+
+    public void createNewCompetition() {
     }
 }
