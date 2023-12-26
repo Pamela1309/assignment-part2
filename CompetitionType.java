@@ -1,12 +1,15 @@
-public enum CompetitionType {
-    MenStreet(" Mens Street"), MenPark(" Mens Park"), WomanStreet(" Womens Street"), WomanPark(" Womans Park");
-    private String type;
+import java.util.ArrayList;
 
-    private CompetitionType(String ty){
-        type = ty;
+public class CompetitionList {
+    
+    public ArrayList<Competition> allCompetition;
+
+    public CompetitionList(){
+        this.allCompetition = new ArrayList<Competition>();
     }
 
-    public String toString(){
-        return type;
+    public void addToCompetitionList(Competition c){
+        this.allCompetition.add(c);
+
     }
 }
