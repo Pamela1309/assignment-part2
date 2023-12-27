@@ -8,7 +8,13 @@ public class Name {
         this.surname = surname;
     }
 
+    public Name(String firstName, String middleName, String surname) {
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.surname = surname;
+    }
+
     public String toString(){
-        return firstName + surname;
+        return firstName + middleName + surname;
     }
 }
