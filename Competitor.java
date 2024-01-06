@@ -88,7 +88,7 @@ public abstract class Competitor {
         return getTotalScores() / 4.0;
     }
     public String getFullDetails() {
-       String s = "Competitor number: " + competitorNumber + "\nName: " + name + " Country: " + country + "\n" +  name +" is a " + gender + " aged " + getAge() + " and has an overall score of: " + getOverallScore();
+       String s = "Competitor number: " + competitorNumber + "\nName: " + name + " Country: " + country + "\n" +  name +" is a " + gender + " aged " + getAge() + "  overall score of: " + getOverallScore();
        return s;
     }
 

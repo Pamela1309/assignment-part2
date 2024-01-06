@@ -24,7 +24,7 @@ public class CompetitorList {
                 return competitor;
             }
         }
-        return null; // Return null if no match is found
+        return null; 
     }
 
     public void add(Competitor competitor) {

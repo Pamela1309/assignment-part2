@@ -54,7 +54,7 @@ public class Competition {
         summary.append("Date: ").append(date).append("\n");
 
         // Append top 3 contestants
-        List<Competitor> topContestants = competitors.getTop3Contestants(); // Assume you have a method to get top 3 contestants
+        List<Competitor> topContestants = competitors.getTop3Contestants(); 
         summary.append("Top 3 Contestants:\n");
         for (int i = 0; i < topContestants.size(); i++) {
             summary.append("Rank ").append(i + 1).append(": ").append(topContestants.get(i).getName()).append("\n");
@@ -63,7 +63,7 @@ public class Competition {
     }
 
 
-
+    
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
