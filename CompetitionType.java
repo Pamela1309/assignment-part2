@@ -1,15 +1,13 @@
-import java.util.ArrayList;
-
-public class CompetitionList {
+public enum CompetitionType
+{
+    Surfing(" Surfing"), Skating(" Skating");
+    private String type;
     
-    public ArrayList<Competition> allCompetition;
-
-    public CompetitionList(){
-        this.allCompetition = new ArrayList<Competition>();
+    private CompetitionType(String ty){
+        type = ty;
     }
-
-    public void addToCompetitionList(Competition c){
-        this.allCompetition.add(c);
-
+    
+    public String toString(){
+        return type;
     }
 }
