@@ -18,7 +18,7 @@ public class CompetitionList {
                 return competition;
             }
         }
-        return null; // Return null if no match is found
+        return null;
     }
 
     public String getCompetitionString(Competition comp) {
