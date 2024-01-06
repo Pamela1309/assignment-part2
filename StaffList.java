@@ -17,6 +17,10 @@ public class StaffList {
                 return staff;
             }
         }
-        return null; // Return null if no match is found
+        return null; 
+    }
+
+    public ArrayList<Staff> getStaffList() {
+        return staffList;
     }
 }
