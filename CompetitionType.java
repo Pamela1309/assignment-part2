@@ -1,6 +1,6 @@
 public enum CompetitionType
 {
-    VolleyballMen(" VolleyballMen"), VolleyballWomen(" VolleyballWomen");
+    VolleyballMen(" VolleyballIndoors"), VolleyballWomen(" VolleyballOutdoors");
     private String type;
     
     private CompetitionType(String ty){
