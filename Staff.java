@@ -6,7 +6,7 @@ class Staff {
     private Name name;
     private String permissionLevel;
 
-    private static List<Competition> allCompetitions = new ArrayList<>();
+    protected static List<Competition> allCompetitions = new ArrayList<>();
 
     public Staff(int staffId, String firstName, String middleName, String lastName) {
         this.staffId = staffId;
