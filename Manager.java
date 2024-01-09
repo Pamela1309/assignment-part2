@@ -42,7 +42,7 @@ public class Manager implements UI {
     }
 
     public void buildCompetitorsFromFile(CompetitorList competitorList, CompetitionList competitionList) {
-        try (BufferedReader br = new BufferedReader(new FileReader("CompetitorsInfo.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("/CompetitorsInfo.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] tokens = line.split(" ");
